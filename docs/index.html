@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css?2">
+    <link rel="stylesheet" href="css/style.css?3">
 </head>
 <body>
 
@@ -543,15 +543,21 @@
     </footer>
 
     <div class="popup hide" id="video-popup">
-        <div class="popup__container" id="player">
-            <iframe 
+        <div class="popup__container" >
+            <div 
+                id="player" 
+                data-video-url="https://www.youtube.com/embed/uHKfrz65KSU"
+                data-width="960"
+                data-height="540"
+            ></div>
+            <!-- <iframe 
                 width="960" 
                 height="540" 
                 src="https://www.youtube.com/embed/uHKfrz65KSU"
                 frameborder="0" 
                 allow="autoplay; encrypted-media" 
                 allowfullscreen
-            ></iframe>
+            ></iframe> -->
             <button class="popup__close close-button" id="video-popup-close" aria-label="Dismiss alert" type="button" data-close>
                 <span aria-hidden="true">&times;</span>
             </button>

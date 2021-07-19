@@ -1,46 +1,3 @@
-// var tag = document.createElement('script');
-
-//       tag.src = "https://www.youtube.com/iframe_api";
-//       var firstScriptTag = document.getElementsByTagName('script')[0];
-//       firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-//       // 3. This function creates an <iframe> (and YouTube player)
-//       //    after the API code downloads.
-//       var player;
-//       function onYouTubeIframeAPIReady() {
-//         player = new YT.Player('player', {
-//           height: '390',
-//           width: '640',
-//           videoId: 'M7lc1UVf-VE',
-//           playerVars: {
-//             'playsinline': 1
-//           },
-//           events: {
-//             'onReady': onPlayerReady,
-//             'onStateChange': onPlayerStateChange
-//           }
-//         });
-//       }
-
-//       // 4. The API will call this function when the video player is ready.
-//       function onPlayerReady(event) {
-//         event.target.playVideo();
-//       }
-
-//       // 5. The API calls this function when the player's state changes.
-//       //    The function indicates that when playing a video (state=1),
-//       //    the player should play for six seconds and then stop.
-//       var done = false;
-//       function onPlayerStateChange(event) {
-//         if (event.data == YT.PlayerState.PLAYING && !done) {
-//             // stopVideo
-//           setTimeout(stopVideo, 60);
-//           done = true;
-//         }
-//       }
-//       function stopVideo() {
-//         player.stopVideo();
-//       }
 
 function initPopup({container, initButtons, closeButton}){
     
@@ -49,12 +6,25 @@ function initPopup({container, initButtons, closeButton}){
     const videoPopupElem = document.querySelector(container)
     // const contactsPopupElem = document.querySelector('#contacts-popup')
     const videoPopupCloseElem = document.querySelector(closeButton)
+    const playerElem = document.querySelector('#player')
     try {
         videoButtonElem.forEach(openButton => {
             openButton.addEventListener('click', (e) => {
                 e.preventDefault()
                 videoPopupElem.classList.remove('hide')
-
+                const url = playerElem.getAttribute('data-video-url')
+                const width = playerElem.getAttribute('data-width')
+                const height = playerElem.getAttribute('data-height')
+                
+                playerElem.innerHTML = 
+                `<iframe 
+                    width="${width}" 
+                    height="${height}" 
+                    src="${url}"
+                    frameborder="0" 
+                    allow="autoplay; encrypted-media" 
+                    allowfullscreen
+                ></iframe>`
             })
         })
     } catch(e) {
@@ -75,7 +45,7 @@ function initPopup({container, initButtons, closeButton}){
         if (videoPopupCloseElem) {
             videoPopupCloseElem.addEventListener('click', () => {
                 videoPopupElem.classList.add('hide')
-                // stopVideo()
+                playerElem.innerHTML = ''
             })
         }
     } catch(e) {
@@ -85,7 +55,7 @@ function initPopup({container, initButtons, closeButton}){
     try {
         videoPopupElem.addEventListener('click', () => {
             videoPopupElem.classList.add('hide')
-            // stopVideo()
+            playerElem.innerHTML = ''
         })
     } catch (e) {
         console.log(e)
