@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <title>Пользовательское соглашение</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header__container" >
+            <div class="header__list">
+                <div class="header__list-item header__list-item--main">UniBoost</div>
+                <div class="header__list-item" data-button-to-functional>Главная</div>
+                <div class="header__list-item" data-button-to-market>Тарифы</div>
+                <div class="header__list-item" data-video-open-button>Видео обзор</div>
+            </div>
+            <div class="header__buttons">
+                <button class="button button--secondary">Войти</button>
+                <button class="button button--primary">Регистрация</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main main--full-page">
+        <section class="section section--secondary section--full-page">
+            <div class="container light-text">
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+                <p>
+                    It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                </p>
+            </div>
+
+        </section>
+    </main>
+    <footer class="footer footer--primary-color">
+        <div class="container footer__container" >
+            <div class="footer__top">
+                <div class="footer__logo" data-to-top>
+                    UniBoost
+                </div>
+                <div class="footer__social social">
+                    <a href="tg://resolve?domain=dima_fishman" class="social__item" target="_blank">
+                        <div class="social__item-icon">
+                            <i class="fa fa-telegram" aria-hidden="true"></i>
+                        </div>
+                    </a>
+                    <a href="http://vk.com" class="social__item" target="_blank">
+                        <div class="social__item-icon social__item-icon--vk">
+                            <i class="fa fa-vk" aria-hidden="true"></i>
+                        </div>
+                    </a>
+                    <a href="http://youtube.com" class="social__item" target="_blank">
+                        <div class="social__item-icon">
+                            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                        </div>
+                    </a>
+                    <a href="mailto:someone@mail.ru" class="social__item" target="_blank">
+                        <div class="social__item-icon">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__company">
+                    © UniBoost, 2021. Все права защищены
+                </div>
+                <div class="footer__list">
+                    <a href="http://google.com" data-contacts-open-button>Контакты</a>
+                    <a href="affiliate_program.html">Партнерская программа</a>
+                    <a href="terms_of_use.html">Пользовательское соглашение</a>
+                    <a href="http://google.com">Политика конфиденциальности</a>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <div class="popup hide" id="video-popup">
+        <div class="popup__container">
+            <iframe 
+                width="1440" 
+                height="762" 
+                src="https://www.youtube.com/embed/7cjVj1ZyzyE"
+                frameborder="0" 
+                allow="autoplay; encrypted-media" 
+                allowfullscreen
+            ></iframe>
+            <button class="popup__close close-button" id="video-popup-close" aria-label="Dismiss alert" type="button" data-close>
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="popup hide" id="contacts-popup">
+        <div class="popup__container">
+            <div class="popup__contacts">
+                Контакты<br>
+                телефон<br>
+                адрес<br>
+                примечания
+            </div>
+            <button class="popup__close close-button" id="contacts-popup-close" aria-label="Dismiss alert" type="button" data-close>
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+
+    </div>
+    
+    
+    
+    
+    <script src='js/script.js' ></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+.header {
+  padding: 20px 0px;
+  background-color: #282A2E; }
+
+.header__container {
+  display: flex;
+  justify-content: space-between; }
+
+.header__list {
+  display: flex;
+  color: #ffffff;
+  align-items: center; }
+
+.header__list-item {
+  margin-right: 20px;
+  font-weight: 500;
+  font-weight: 500;
+  line-height: 1.75;
+  cursor: pointer; }
+
+.header__list-item--main {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: -1px; }
+
+.header__buttons button {
+  margin-left: 24px; }
+
+/*# sourceMappingURL=header.css.map */
