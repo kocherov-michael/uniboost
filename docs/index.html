@@ -9,21 +9,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css?1">
+    <link rel="stylesheet" href="css/style.css?2">
 </head>
 <body>
 
     <header class="header">
         <div class="container header__container" >
             <div class="header__list">
-                <a href="index.html" class="header__list-item header__list-item--main">UniBoost</a>
-                <div class="header__list-item" data-button-to-functional>Главная</div>
+                <div class="header__list-item header__list-item--main">UniBoost</div>
+                <!-- <div class="header__list-item" data-button-to-functional>Главная</div> -->
                 <div class="header__list-item" data-button-to-market>Тарифы</div>
                 <div class="header__list-item" data-video-open-button>Видео обзор</div>
             </div>
             <div class="header__buttons">
-                <button class="button button--secondary">Войти</button>
-                <button class="button button--primary">Регистрация</button>
+                <a href="http://google.com" class="button button--secondary">Войти</a>
+                <a href="http://google.com" class="button button--primary">Регистрация</a>
             </div>
         </div>
     </header>
@@ -247,13 +247,13 @@
             </div>
         </section>
 
-        <section class="section section--secondary" id="market" data-market>
+        <section class="section section--secondary" >
             <div class="container">
                 <div class="market">
                     
                     <div class="market__header">
     
-                        <div class="market__title title">
+                        <div class="market__title title" id="market" data-market>
                             Выберите маркетплейс
                         </div>
                         <div class="market__buttons">
@@ -264,7 +264,7 @@
                     <div class="market__cards">
                         <div class="market__cards-item">
 
-                            <form class="card" metod="get" action="http://google.com" target="_blank">
+                            <form class="card card--test-shadow" metod="get" action="http://google.com" target="_blank">
                                 <div class="card__title">Лайт</div>
                                 <div class="card__dropdown">
                                     <div class="dropdown" data-dropdown>
@@ -485,8 +485,8 @@
                         <div class="questions__title title">Остались вопросы?</div>
                         <div class="questions__title description">Пишите в чат телеграм или на почту</div>
                         <div class="questions__buttons">
-                            <a href="tg://resolve?domain=dima_fishman" class="button button--primary"><i class="fa fa-telegram" aria-hidden="true"></i>Написать в Telegram</a>
-                            <a href="mailto:someone@mail.ru" class="button button--secondary"><i class="fa fa-envelope-o" aria-hidden="true"></i>Написать на почту</a>
+                            <a href="tg://resolve?domain=UniBoost_support" class="button button--primary"><i class="fa fa-telegram" aria-hidden="true"></i>Написать в Telegram</a>
+                            <a href="mailto:info@uniboost.io" class="button button--secondary"><i class="fa fa-envelope-o" aria-hidden="true"></i>info@uniboost.io</a>
                         </div>
                         <div class="questions__bg"></div>
                     </div>
@@ -504,7 +504,7 @@
                     UniBoost
                 </div>
                 <div class="footer__social social">
-                    <a href="tg://resolve?domain=dima_fishman" class="social__item" target="_blank">
+                    <a href="tg://resolve?domain=UniBoost_support" class="social__item" target="_blank">
                         <div class="social__item-icon">
                             <i class="fa fa-telegram" aria-hidden="true"></i>
                         </div>
@@ -519,7 +519,7 @@
                             <i class="fa fa-youtube-play" aria-hidden="true"></i>
                         </div>
                     </a>
-                    <a href="mailto:someone@mail.ru" class="social__item" target="_blank">
+                    <a href="mailto:info@uniboost.io" class="social__item" target="_blank">
                         <div class="social__item-icon">
                             <i class="fa fa-envelope" aria-hidden="true"></i>
                         </div>
@@ -531,10 +531,10 @@
                     © UniBoost, 2021. Все права защищены
                 </div>
                 <div class="footer__list">
-                    <a href="http://google.com" data-contacts-open-button>Контакты</a>
+                    <a href="index.html" data-contacts-open-button>Контакты</a>
                     <a href="affiliate_program.html">Партнерская программа</a>
                     <a href="terms_of_use.html">Пользовательское соглашение</a>
-                    <a href="http://google.com">Политика конфиденциальности</a>
+                    <a href="policy.html">Политика конфиденциальности</a>
                 </div>
             </div>
 
@@ -543,11 +543,11 @@
     </footer>
 
     <div class="popup hide" id="video-popup">
-        <div class="popup__container">
+        <div class="popup__container" id="player">
             <iframe 
                 width="960" 
-                height="508" 
-                src="https://www.youtube.com/embed/7cjVj1ZyzyE"
+                height="540" 
+                src="https://www.youtube.com/embed/uHKfrz65KSU"
                 frameborder="0" 
                 allow="autoplay; encrypted-media" 
                 allowfullscreen
@@ -580,6 +580,7 @@
     <include src="b.html">Loading...</include> -->
     <script src='js/autoswitcher.js' ></script>
     <script src='js/countdown.js' ></script>
+    <!-- <script src='https://www.youtube.com/iframe_api' ></script> -->
     <script src='js/script.js' ></script>
 </body>
 </html>

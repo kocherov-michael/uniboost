@@ -1,33 +1,35 @@
 /*
-Error: Invalid CSS after "$": expected identifier, was ""
-        on line 11 of E:/Arbitrazh/Dimka/Uniboost/docs/css/scss/vars.scss
-        from line 1 of E:\Arbitrazh\Dimka\Uniboost\docs\css\scss\button.scss
+Error: Undefined variable: "$text-primary-color".
+        on line 38 of E:\Arbitrazh\Dimka\Uniboost\docs\css\scss\offer.scss
 
-6: $text-secondary-color: rgba(224, 224, 255, 0.6);
-7: $button-primary-color: #4579F5;
-8: $button-primary-color-hover: #5081f6;
-9: $button-secondary-color: #2E3035;
-10: $button-secondary-color-hover: #5081f6;
-11: $
+33:     align-items: center;
+34:     font-size: 24px;
+35:     line-height: 1.33;
+36:     text-align: center;
+37:     letter-spacing: -1px;
+38:     color: $text-primary-color;
+39:     font-weight: bold;
+40:     background-color: $secondary-base-color;
+41:     // background: linear-gradient(135deg, rgba(245, 247, 250, 0.12) 0%, rgba(245, 247, 250, 0.06) 52.14%, rgba(245, 247, 250, 0.0001) 100%);
+42:     // border: 1px solid rgba(245, 247, 250, 0.06);
+43:     box-sizing: border-box;
 
 Backtrace:
-E:/Arbitrazh/Dimka/Uniboost/docs/css/scss/vars.scss:11
-E:\Arbitrazh\Dimka\Uniboost\docs\css\scss\button.scss:1
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1203:in `tok!'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:639:in `variable'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:696:in `block_child'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:137:in `stylesheet'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:41:in `parse'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:321:in `to_tree'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:327:in `block in visit_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `block in with_import'
+E:\Arbitrazh\Dimka\Uniboost\docs\css\scss\offer.scss:38
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `with_import'
-C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
@@ -60,4 +62,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"$\": expected identifier, was \"\"\A         on line 11 of E:/Arbitrazh/Dimka/Uniboost/docs/css/scss/vars.scss\A         from line 1 of E:\Arbitrazh\Dimka\Uniboost\docs\css\scss\button.scss\A \A 6: $text-secondary-color: rgba(224, 224, 255, 0.6);\A 7: $button-primary-color: #4579F5;\A 8: $button-primary-color-hover: #5081f6;\A 9: $button-secondary-color: #2E3035;\A 10: $button-secondary-color-hover: #5081f6;\A 11: $"; }
+  content: "Error: Undefined variable: \"$text-primary-color\".\A         on line 38 of E:\Arbitrazh\Dimka\Uniboost\docs\css\scss\offer.scss\A \A 33:     align-items: center;\A 34:     font-size: 24px;\A 35:     line-height: 1.33;\A 36:     text-align: center;\A 37:     letter-spacing: -1px;\A 38:     color: $text-primary-color;\A 39:     font-weight: bold;\A 40:     background-color: $secondary-base-color;\A 41:     // background: linear-gradient(135deg, rgba(245, 247, 250, 0.12) 0%, rgba(245, 247, 250, 0.06) 52.14%, rgba(245, 247, 250, 0.0001) 100%);\A 42:     // border: 1px solid rgba(245, 247, 250, 0.06);\A 43:     box-sizing: border-box;"; }

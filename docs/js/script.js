@@ -1,16 +1,68 @@
+// var tag = document.createElement('script');
+
+//       tag.src = "https://www.youtube.com/iframe_api";
+//       var firstScriptTag = document.getElementsByTagName('script')[0];
+//       firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+//       // 3. This function creates an <iframe> (and YouTube player)
+//       //    after the API code downloads.
+//       var player;
+//       function onYouTubeIframeAPIReady() {
+//         player = new YT.Player('player', {
+//           height: '390',
+//           width: '640',
+//           videoId: 'M7lc1UVf-VE',
+//           playerVars: {
+//             'playsinline': 1
+//           },
+//           events: {
+//             'onReady': onPlayerReady,
+//             'onStateChange': onPlayerStateChange
+//           }
+//         });
+//       }
+
+//       // 4. The API will call this function when the video player is ready.
+//       function onPlayerReady(event) {
+//         event.target.playVideo();
+//       }
+
+//       // 5. The API calls this function when the player's state changes.
+//       //    The function indicates that when playing a video (state=1),
+//       //    the player should play for six seconds and then stop.
+//       var done = false;
+//       function onPlayerStateChange(event) {
+//         if (event.data == YT.PlayerState.PLAYING && !done) {
+//             // stopVideo
+//           setTimeout(stopVideo, 60);
+//           done = true;
+//         }
+//       }
+//       function stopVideo() {
+//         player.stopVideo();
+//       }
+
 function initPopup({container, initButtons, closeButton}){
+    
     const videoButtonElem = document.querySelectorAll(initButtons)
     // const contactsButtonElem = document.querySelectorAll('[data-contacts-open-button]')
     const videoPopupElem = document.querySelector(container)
     // const contactsPopupElem = document.querySelector('#contacts-popup')
     const videoPopupCloseElem = document.querySelector(closeButton)
-    
-    videoButtonElem.forEach(openButton => {
-        openButton.addEventListener('click', (e) => {
-            e.preventDefault()
-            videoPopupElem.classList.remove('hide')
+    try {
+        videoButtonElem.forEach(openButton => {
+            openButton.addEventListener('click', (e) => {
+                e.preventDefault()
+                videoPopupElem.classList.remove('hide')
+
+            })
         })
-    })
+    } catch(e) {
+        console.log(e)
+    }
+    // console.log('player',player)
+
+
     // contactsButtonElem.forEach(openButton => {
     //     openButton.addEventListener('click', (e) => {
     //         e.preventDefault()
@@ -19,18 +71,28 @@ function initPopup({container, initButtons, closeButton}){
     //         console.log('videoPopupElem',videoPopupElem)
     //     })
     // })
-    if (videoPopupCloseElem) {
-        videoPopupCloseElem.addEventListener('click', () => {
-            console.log('close')
-            videoPopupElem.classList.add('hide')
-            console.log('videoPopupElem',videoPopupElem)
-        })
+    try {
+        if (videoPopupCloseElem) {
+            videoPopupCloseElem.addEventListener('click', () => {
+                videoPopupElem.classList.add('hide')
+                // stopVideo()
+            })
+        }
+    } catch(e) {
+        console.log(e)
     }
-    videoPopupElem.addEventListener('click', () => {
-        console.log('close')
-        videoPopupElem.classList.add('hide')
-        console.log('videoPopupElem',videoPopupElem)
-    })
+
+    try {
+        videoPopupElem.addEventListener('click', () => {
+            videoPopupElem.classList.add('hide')
+            // stopVideo()
+        })
+    } catch (e) {
+        console.log(e)
+    }
+
+    
+
 }
 
 initPopup({
@@ -52,31 +114,46 @@ function initScrolls() {
     const functionalButtonElem = document.querySelector('[data-button-to-functional]')
     const toTopElem = document.querySelector('[data-to-top]')
     
-    marketButtonElem.addEventListener('click', () => {
-        try {
-            marketSection.scrollIntoView({
+    try {
+        marketButtonElem.addEventListener('click', () => {
+            try {
+                marketSection.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+            catch(e) {
+                window.location = 'index.html#market'
+            }
+        })
+    } catch(e) {
+        console.log(e)
+    }
+
+    // try {
+    //     functionalButtonElem.addEventListener('click', () => {
+    //         try {
+    //             functionalSection.scrollIntoView({
+    //                 behavior: 'smooth'
+    //             });
+    //         }
+    //         catch(e) {
+    //             window.location = 'index.html#functional'
+    //         }
+    //     })
+    // } catch(e) {
+    //     console.log(e)
+    // }
+
+    try {
+        toTopElem.addEventListener('click', () => {
+            document.body.scrollIntoView({
                 behavior: 'smooth'
             });
-        }
-        catch(e) {
-            window.location = 'index.html#market'
-        }
-    })
-    functionalButtonElem.addEventListener('click', () => {
-        try {
-            functionalSection.scrollIntoView({
-                behavior: 'smooth'
-            });
-        }
-        catch(e) {
-            window.location = 'index.html#functional'
-        }
-    })
-    toTopElem.addEventListener('click', () => {
-        document.body.scrollIntoView({
-            behavior: 'smooth'
-        });
-    })
+        })
+    } catch(e) {
+        console.log(e)
+    }
+
 }
 
 

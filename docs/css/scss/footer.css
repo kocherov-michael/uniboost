@@ -1,7 +1,7 @@
 /*
 Error: Invalid CSS after "$": expected identifier, was ""
         on line 11 of E:/Arbitrazh/Dimka/Uniboost/docs/css/scss/vars.scss
-        from line 1 of E:\Arbitrazh\Dimka\Uniboost\docs\css\scss\button.scss
+        from line 1 of E:\Arbitrazh\Dimka\Uniboost\docs\css\scss\footer.scss
 
 6: $text-secondary-color: rgba(224, 224, 255, 0.6);
 7: $button-primary-color: #4579F5;
@@ -12,7 +12,7 @@ Error: Invalid CSS after "$": expected identifier, was ""
 
 Backtrace:
 E:/Arbitrazh/Dimka/Uniboost/docs/css/scss/vars.scss:11
-E:\Arbitrazh\Dimka\Uniboost\docs\css\scss\button.scss:1
+E:\Arbitrazh\Dimka\Uniboost\docs\css\scss\footer.scss:1
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
 C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1203:in `tok!'
@@ -60,4 +60,4 @@ C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"$\": expected identifier, was \"\"\A         on line 11 of E:/Arbitrazh/Dimka/Uniboost/docs/css/scss/vars.scss\A         from line 1 of E:\Arbitrazh\Dimka\Uniboost\docs\css\scss\button.scss\A \A 6: $text-secondary-color: rgba(224, 224, 255, 0.6);\A 7: $button-primary-color: #4579F5;\A 8: $button-primary-color-hover: #5081f6;\A 9: $button-secondary-color: #2E3035;\A 10: $button-secondary-color-hover: #5081f6;\A 11: $"; }
+  content: "Error: Invalid CSS after \"$\": expected identifier, was \"\"\A         on line 11 of E:/Arbitrazh/Dimka/Uniboost/docs/css/scss/vars.scss\A         from line 1 of E:\Arbitrazh\Dimka\Uniboost\docs\css\scss\footer.scss\A \A 6: $text-secondary-color: rgba(224, 224, 255, 0.6);\A 7: $button-primary-color: #4579F5;\A 8: $button-primary-color-hover: #5081f6;\A 9: $button-secondary-color: #2E3035;\A 10: $button-secondary-color-hover: #5081f6;\A 11: $"; }
