@@ -20,6 +20,17 @@ body {
     }
 }
 
+.container {
+    max-width: 1230px;
+    margin: 0 auto;
+    flex: 1;
+    padding-left: 120px;
+    padding-right: 120px;
+    @media screen and (min-width: 1600px) {
+        max-width: 1600px;
+    }
+}
+
 .section {
     padding-top: 70px;
     padding-bottom: 70px;
@@ -36,14 +47,9 @@ body {
     &--pb-0 {
         padding-bottom: 0;
     }
+    
  }
-.container {
-    max-width: 1600px;
-    margin: 0 auto;
-    flex: 1;
-    padding-left: 60px;
-    padding-right: 60px;
-}
+
 
 .title {
     font-size: 36px;
