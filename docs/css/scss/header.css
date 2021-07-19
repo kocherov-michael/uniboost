@@ -21,6 +21,7 @@
   text-decoration: none; }
 
 .header__list-item--main {
+  font-family: 'Exo 2', sans-serif;
   padding-top: 0;
   font-weight: bold;
   font-size: 24px;

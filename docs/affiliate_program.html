@@ -112,14 +112,12 @@
 
     <div class="popup hide" id="video-popup">
         <div class="popup__container">
-            <iframe 
-                width="1440" 
-                height="762" 
-                src="https://www.youtube.com/embed/7cjVj1ZyzyE"
-                frameborder="0" 
-                allow="autoplay; encrypted-media" 
-                allowfullscreen
-            ></iframe>
+            <div 
+                id="player" 
+                data-video-url="https://www.youtube.com/embed/uHKfrz65KSU"
+                data-width="960"
+                data-height="540"
+            ></div>
             <button class="popup__close close-button" id="video-popup-close" aria-label="Dismiss alert" type="button" data-close>
                 <span aria-hidden="true">&times;</span>
             </button>
