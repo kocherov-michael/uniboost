@@ -8,7 +8,6 @@ class Autoswitcher {
     listenButtonItems(buttonItems) {
         for ( let i = 0; i < buttonItems.length; i++) {
             this.textItems[i].addEventListener('click', () => {
-                console.log('click')
                 this.disactivateSlide(this.currentItem)
                 this.activateSlide(i)
                 this.currentItem = i
@@ -20,7 +19,6 @@ class Autoswitcher {
 
     listenButtonContainer(container) {
         container.addEventListener('mouseleave', () => {
-            console.log('mouseleave')
             if (!this.autoSlide) {
                 this.autoSlide = true
                 this.launchTimeout()

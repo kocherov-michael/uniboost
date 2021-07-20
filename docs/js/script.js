@@ -1,3 +1,6 @@
+initScrolls()
+marketplaceInit()
+
 
 function initPopup({container, initButtons, closeButton}){
     
@@ -174,7 +177,6 @@ function dropdownInit(card) {
         dropdownListElem.addEventListener('mouseleave', () => {
             try {
                 if (isOpen) {
-                    console.log('mouseleave')
                     dropdownElem.classList.remove('dropdown--open')
                     isOpen = false
                 }
@@ -194,7 +196,6 @@ function cardInit(card, cardsElem) {
     const dropdownValueElem = card.querySelector('[data-dropdown-value]')
     dropdownInit(card)
     card.addEventListener('submit', e => {
-        console.log('submit')
         try {
             if (dropdownInputElem) {
                 const value = dropdownInputElem.getAttribute('value')
@@ -240,6 +241,3 @@ function marketplaceInit () {
     
     })
 }
-
-initScrolls()
-marketplaceInit()
