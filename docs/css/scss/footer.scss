@@ -34,26 +34,28 @@
     align-items: center;
     text-decoration: none;
     font-size: 20px;
-    transition: color .4s ease;
-    color: white;
+    transition: color .1s ease;
+    color: $text-secondary-color;
     &-icon {
         &--vk {
             font-size: 12px;
             padding: 4px;
             border-radius: 4px;
-            background-color: white;
+            background-color: $text-secondary-color;
             width: 20px;
             height: 20px;
             color: #24272D;
             display: flex;
             justify-content: center;
             align-items: center;
-            transition: background-color .4s ease;
+            transition: background-color .1s ease;
         }
     }
     &:hover {
+        transition: color .4s ease;
         color: $button-primary-color;
         .social__item-icon--vk {
+            transition: background-color .4s ease;
             background-color: $button-primary-color;
         }
     }
