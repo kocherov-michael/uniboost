@@ -73,7 +73,12 @@ body {
     p {
         text-indent: 20px;
     }
-    h2, h3 {
+    p.light-text__terms-contacts {
+        text-indent: 0;
+        font-size: 18px;
+        padding-bottom: 30px;
+    }
+    h1, h2, h3 {
         text-align: center;
     }
     p.light-text__contacts {
@@ -87,4 +92,7 @@ body {
     color: $text-primary-color;
     font-size: 18px;
     line-height: 1.7;
+    h1 {
+        text-align: center;
+    }
 }
