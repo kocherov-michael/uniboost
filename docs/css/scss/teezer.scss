@@ -1,17 +1,28 @@
 .teezer {
     display: flex;
     justify-content: space-between;
+    @media screen and (max-width: 768px) {
+        flex-direction: column-reverse;
+        margin-top: -30px;
+    }
 }
 .teezer__text {
     flex: 1 1 50%;
     display: flex;
     align-items: center;
     max-width: 540px;
+    @media screen and (max-width: 768px) {
+        text-align: center;
+    }
 }
 .teezer__img {
     flex: 1 1 50%;
     display: flex;
     justify-content: center;
+    padding-left: 20px;
+    @media screen and (max-width: 768px) {
+        padding: 0 5%;
+    }
 }
 .video-image {
     position: relative;
@@ -90,12 +101,20 @@
 }
 .teezer-text__desc {
     margin-top: 48px;
+    @media screen and (max-width: 768px) {
+        margin-top: 28px;
+    }
 }
 .teezer-text__buttons {
     margin-top: 32px;
-
+    @media screen and (max-width: 768px) {
+        margin-top: 24px;
+    }
     button {
         margin-right: 24px;
+        @media screen and (max-width: 768px) {
+            margin-right: 12px;
+        }
     }
 }
 @keyframes wordSlide {

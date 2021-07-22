@@ -54,13 +54,11 @@
     .button {
         margin-left: 24px;
         @media screen and (max-width: 992px) {
-            padding: 5px 10px;
-            font-size: 14px;
             margin-left: 12px;
         }
-        @media screen and (max-width: 380px) {
-            font-size: 12px;
-            margin-left: 6px;
-        }
+        // @media screen and (max-width: 380px) {
+        //     font-size: 12px;
+        //     margin-left: 6px;
+        // }
     }
 }
