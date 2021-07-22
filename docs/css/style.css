@@ -50,6 +50,19 @@ body {
 
 .light-text {
   color: #ffffff;
+  font-size: 16px;
+  line-height: 1.7; }
+  .light-text p {
+    text-indent: 20px; }
+  .light-text h2, .light-text h3 {
+    text-align: center; }
+  .light-text p.light-text__contacts {
+    text-indent: 0;
+    font-size: 18px;
+    padding: 50px 0 30px; }
+
+.propgramm-text {
+  color: #ffffff;
   font-size: 18px;
   line-height: 1.7; }
 
@@ -197,7 +210,8 @@ body {
   display: flex;
   align-items: center; }
   .video-image__img {
-    width: 100%; }
+    width: 100%;
+    transform: translateY(-20px); }
     .video-image__img img {
       width: 100%; }
 
