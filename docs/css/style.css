@@ -21,6 +21,18 @@ body {
   flex: 1;
   padding-left: 120px;
   padding-right: 120px; }
+  @media screen and (max-width: 1200px) {
+    .container {
+      padding-left: 60px;
+      padding-right: 60px; } }
+  @media screen and (max-width: 576px) {
+    .container {
+      padding-left: 30px;
+      padding-right: 30px; } }
+  @media screen and (max-width: 380px) {
+    .container {
+      padding-left: 15px;
+      padding-right: 15px; } }
 
 .section {
   padding-top: 70px;
@@ -175,13 +187,21 @@ body {
   align-items: center; }
 
 .header__list-item {
-  margin-right: 35px;
   font-weight: 500;
   line-height: 1.75;
   cursor: pointer;
   padding-top: 5px;
   color: #ffffff;
   text-decoration: none; }
+
+.header__list-item--secondary {
+  margin-right: 35px; }
+  @media screen and (max-width: 992px) {
+    .header__list-item--secondary {
+      margin-right: 15px; } }
+  @media screen and (max-width: 768px) {
+    .header__list-item--secondary {
+      display: none; } }
 
 .header__list-item--main {
   font-family: 'Exo 2', sans-serif;
@@ -191,9 +211,25 @@ body {
   margin-right: 50px;
   line-height: 1;
   letter-spacing: -1px; }
+  @media screen and (max-width: 576px) {
+    .header__list-item--main {
+      font-size: 20px;
+      margin-right: 0px; } }
+  @media screen and (max-width: 380px) {
+    .header__list-item--main {
+      font-size: 16px; } }
 
 .header__buttons .button {
   margin-left: 24px; }
+  @media screen and (max-width: 992px) {
+    .header__buttons .button {
+      padding: 5px 10px;
+      font-size: 14px;
+      margin-left: 12px; } }
+  @media screen and (max-width: 380px) {
+    .header__buttons .button {
+      font-size: 12px;
+      margin-left: 6px; } }
 
 .teezer {
   display: flex;

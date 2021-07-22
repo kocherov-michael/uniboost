@@ -26,9 +26,18 @@ body {
     flex: 1;
     padding-left: 120px;
     padding-right: 120px;
-    // @media screen and (min-width: 1600px) {
-    //     max-width: 1600px;
-    // }
+    @media screen and (max-width: 1200px) {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    @media screen and (max-width: 576px) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    @media screen and (max-width: 380px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
 
 .section {
