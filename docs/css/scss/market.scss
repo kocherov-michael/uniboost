@@ -40,11 +40,15 @@
         @media screen and (max-width: 768px) {
             margin-bottom: 30px;
             margin-right: 0;
-            width: 330px;
         }
         @media screen and (max-width: 410px) {
-            width: 100%;
         }
+    }
+    @media screen and (max-width: 768px) {
+        width: 330px;
+    }
+    @media screen and (max-width: 410px) {
+        width: 100%;
     }
 }
 
