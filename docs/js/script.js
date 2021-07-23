@@ -1,6 +1,21 @@
 initScrolls()
 marketplaceInit()
 
+initPopup({
+    container: '#video-popup',
+    initButtons: '[data-video-open-button]',
+    closeButton: '#video-popup-close',
+})
+initPopup({
+    container: '#contacts-popup',
+    initButtons: '[data-contacts-open-button]',
+    closeButton: '#contacts-popup-close',
+})
+
+const popupContactsContainer = document.querySelector('[data-popup-container]')
+popupContactsContainer.addEventListener('click', e => {
+    e.stopPropagation()
+})
 
 function initPopup({container, initButtons, closeButton}){
     
@@ -16,8 +31,14 @@ function initPopup({container, initButtons, closeButton}){
                 e.preventDefault()
                 videoPopupElem.classList.remove('hide')
                 const url = playerElem.getAttribute('data-video-url')
-                const width = playerElem.getAttribute('data-width')
-                const height = playerElem.getAttribute('data-height')
+                let width = playerElem.getAttribute('data-width')
+                let height = playerElem.getAttribute('data-height')
+
+                if (width > window.innerWidth - 80) {
+                    const ratio = width / height
+                    width = window.innerWidth - 80
+                    height = width / ratio
+                }
                 
                 playerElem.innerHTML = 
                 `<iframe 
@@ -68,23 +89,12 @@ function initPopup({container, initButtons, closeButton}){
 
 }
 
-initPopup({
-    container: '#video-popup',
-    initButtons: '[data-video-open-button]',
-    closeButton: '#video-popup-close',
-})
-initPopup({
-    container: '#contacts-popup',
-    initButtons: '[data-contacts-open-button]',
-    closeButton: '#contacts-popup-close',
-})
-
 function initScrolls() {
 
     const marketSection = document.querySelector('[data-market]')
-    const functionalSection = document.querySelector('[data-functional-container]')
+    // const functionalSection = document.querySelector('[data-functional-container]')
     const marketButtonElem = document.querySelector('[data-button-to-market]')
-    const functionalButtonElem = document.querySelector('[data-button-to-functional]')
+    // const functionalButtonElem = document.querySelector('[data-button-to-functional]')
     const toTopElem = document.querySelector('[data-to-top]')
     
     try {

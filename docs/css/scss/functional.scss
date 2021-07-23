@@ -7,9 +7,17 @@
 .functional__list-buttons {
     padding-top: 40px;
     padding-bottom: 25px;
+    @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+    }
     button {
         margin-left: 8px;
         margin-right: 8px;
+        @media screen and (max-width: 768px) {
+            margin-top: 4px;
+            margin-bottom: 4px;
+        }
     }
 }
 .functional__content {
@@ -17,9 +25,15 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    @media screen and (max-width: 768px) {
+        flex-direction: column-reverse;
+    }
 }
 .functional-text {
     max-width: 530px;
+    @media screen and (max-width: 768px) {
+        text-align: center;
+    }
 }
 .functional-text__title {
     font-weight: bold;
@@ -41,8 +55,10 @@
     flex: 1 0 100%;
     opacity: 0;
     transition: opacity .4s ease;
+    width: 0;
     &--active {
         opacity: 1;
+        width: 100%;
     }
 }
 
@@ -54,6 +70,13 @@
     flex-basis: 50%;
     display: flex;
     justify-content: center;
+}
+.functional__img {
+    width: 100%;
+    img {
+        width: 100%;
+
+    }
 }
 
 .link {
