@@ -44,12 +44,12 @@ body {
     background-color: #282A2E; }
   .section--full-page {
     flex: 1; }
-  .section--pb-0 {
-    padding-bottom: 0; }
   @media screen and (max-width: 768px) {
     .section {
-      padding-top: 30px;
-      padding-bottom: 30px; } }
+      padding-top: 50px;
+      padding-bottom: 50px; } }
+  .section--pb-0 {
+    padding-bottom: 0; }
 
 .title {
   font-size: 36px;
@@ -287,10 +287,11 @@ body {
   flex: 1 1 50%;
   display: flex;
   justify-content: center;
-  padding-left: 20px; }
+  transform: translateX(10%); }
   @media screen and (max-width: 768px) {
     .teezer__img {
-      padding: 0 5%; } }
+      padding: 0 5%;
+      transform: none; } }
 
 .video-image {
   position: relative;
@@ -500,21 +501,32 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center; }
+  .functional__title {
+    text-align: center; }
 
 .functional__list-buttons {
   padding-top: 40px;
   padding-bottom: 25px; }
   @media screen and (max-width: 768px) {
     .functional__list-buttons {
-      display: flex;
+      display: flex; } }
+  @media screen and (max-width: 430px) {
+    .functional__list-buttons {
       flex-direction: column; } }
   .functional__list-buttons button {
     margin-left: 8px;
     margin-right: 8px; }
     @media screen and (max-width: 768px) {
       .functional__list-buttons button {
-        margin-top: 4px;
-        margin-bottom: 4px; } }
+        margin-top: 2px;
+        margin-bottom: 2px;
+        font-size: 12px;
+        margin-left: 2px;
+        margin-right: 2px;
+        padding: 6px; } }
+    @media screen and (max-width: 430px) {
+      .functional__list-buttons button {
+        padding: 2px 24px; } }
 
 .functional__content {
   display: flex;
@@ -537,6 +549,12 @@ body {
   line-height: 1;
   letter-spacing: -1px;
   color: #ffffff; }
+  @media screen and (max-width: 1200px) {
+    .functional-text__title {
+      font-size: 24px; } }
+  @media screen and (max-width: 768px) {
+    .functional-text__title {
+      font-size: 20px; } }
 
 .functional-text__desc {
   padding-top: 16px; }
@@ -576,20 +594,48 @@ body {
 .offer {
   display: flex;
   align-items: center; }
+  @media screen and (max-width: 768px) {
+    .offer {
+      flex-direction: column-reverse; } }
 
 .offer__img {
   flex: 1 1 50%; }
+  .offer__img img {
+    display: block; }
+    @media screen and (max-width: 1200px) {
+      .offer__img img {
+        width: 100%; } }
 
 .offer__text {
   flex: 1 1 50%;
   padding-left: 100px; }
+  @media screen and (max-width: 1400px) {
+    .offer__text {
+      padding-left: 50px; } }
+  @media screen and (max-width: 1300px) {
+    .offer__text {
+      padding-left: 0; } }
+  @media screen and (max-width: 1200px) {
+    .offer__text {
+      margin-top: -70px; } }
+  @media screen and (max-width: 768px) {
+    .offer__text {
+      margin-top: 0;
+      text-align: center;
+      padding-bottom: 30px; } }
 
 .offer-text__title {
   padding-bottom: 48px;
   max-width: 420px; }
+  @media screen and (max-width: 1200px) {
+    .offer-text__title {
+      padding-bottom: 20px; } }
 
 .countdown__numbers {
   display: flex; }
+  @media screen and (max-width: 768px) {
+    .countdown__numbers {
+      justify-content: center; } }
 
 .countdown__title {
   padding-bottom: 12px; }
@@ -620,6 +666,9 @@ body {
 
 .offer-text__buttons {
   padding-top: 32px; }
+  @media screen and (max-width: 1200px) {
+    .offer-text__buttons {
+      padding-top: 20px; } }
 
 .market__header {
   display: flex;
