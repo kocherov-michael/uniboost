@@ -171,7 +171,7 @@ body {
     box-shadow: 0 8px 8px -4px rgba(69, 121, 245, 0.12), 0 1px 4px -1px rgba(27, 10, 82, 0.12), 0 1px 1px 0 rgba(69, 121, 245, 0.24); }
 
 .dropdown__value {
-  padding: 8px 8px 8px 16px;
+  padding: 8px 27px 8px 16px;
   cursor: pointer; }
 
 .dropdown__list {
@@ -194,7 +194,7 @@ body {
     display: block;
     content: "";
     position: absolute;
-    top: 12px;
+    top: calc(50% - 5px);
     right: 14px;
     width: 8px;
     height: 8px;
@@ -204,13 +204,13 @@ body {
     pointer-events: none;
     z-index: 20; }
   .dropdown--open:after {
-    top: 16px;
+    top: calc(50% - 1px);
     transform: rotate(-135deg); }
   .dropdown--open .dropdown__list {
     display: block; }
 
 .dropdown__list-item {
-  padding: 8px 8px 8px 16px;
+  padding: 8px 27px 8px 16px;
   cursor: pointer; }
   .dropdown__list-item:hover {
     background-color: rgba(224, 224, 255, 0.02); }
@@ -675,12 +675,25 @@ body {
   justify-content: space-between;
   padding-bottom: 50px; }
 
+.market__title {
+  padding-right: 15px; }
+
 .market__buttons {
   display: flex; }
 
 .market__cards {
   display: flex;
   padding: 0 40px; }
+  @media screen and (max-width: 1330px) {
+    .market__cards {
+      padding: 0; } }
+  @media screen and (max-width: 768px) {
+    .market__cards {
+      flex-direction: column;
+      align-items: center; } }
+  @media screen and (max-width: 480px) {
+    .market__cards {
+      padding: 0; } }
 
 .market__cards-item {
   flex: 1 1 33%;
@@ -688,6 +701,17 @@ body {
   flex-direction: column; }
   .market__cards-item:not(:last-child) {
     margin-right: 30px; }
+    @media screen and (max-width: 1230px) {
+      .market__cards-item:not(:last-child) {
+        margin-right: 15px; } }
+    @media screen and (max-width: 768px) {
+      .market__cards-item:not(:last-child) {
+        margin-bottom: 30px;
+        margin-right: 0;
+        width: 330px; } }
+    @media screen and (max-width: 410px) {
+      .market__cards-item:not(:last-child) {
+        width: 100%; } }
 
 .card {
   flex: 1;
@@ -700,6 +724,10 @@ body {
   border-radius: 0px 40px;
   transition: transform .4s ease, background .4s ease;
   position: relative; }
+  @media screen and (min-width: 769px) and (max-width: 810px) {
+    .card {
+      padding-left: 12px;
+      padding-right: 12px; } }
   .card--active {
     background: #4579F5; }
     .card--active button {
@@ -733,8 +761,11 @@ body {
   color: #ffffff;
   padding-bottom: 16px; }
 
+.card__dropdown {
+  height: 54px; }
+
 .card__list {
-  padding-top: 32px; }
+  padding-top: 14px; }
 
 .card__list-item {
   padding-bottom: 8px; }
@@ -763,6 +794,15 @@ body {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5; }
+  @media screen and (max-width: 1080px) {
+    .list-item {
+      font-size: 14px; } }
+  @media screen and (min-width: 769px) and (max-width: 992px) {
+    .list-item {
+      letter-spacing: -0.04em;
+      display: flex;
+      flex-direction: column;
+      align-items: center; } }
 
 .list-item__name {
   color: rgba(224, 224, 255, 0.6);

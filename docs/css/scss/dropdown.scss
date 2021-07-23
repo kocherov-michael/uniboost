@@ -1,7 +1,7 @@
 
 
 .dropdown__value {
-    padding: 8px 8px 8px 16px;
+    padding: 8px 27px 8px 16px;
     cursor: pointer;
     // border: 1px solid red;
     
@@ -29,7 +29,7 @@
         display: block;
         content: "";
         position: absolute;
-        top: 12px;
+        top: calc(50% - 5px);
         right: 14px;
         width: 8px;
         height: 8px;
@@ -42,7 +42,7 @@
     
     &--open {
         &:after {
-            top: 16px;
+            top: calc(50% - 1px);
             transform: rotate(-135deg);
         }
         .dropdown__list {
@@ -51,7 +51,7 @@
     }
 }
 .dropdown__list-item {
-    padding: 8px 8px 8px 16px;
+    padding: 8px 27px 8px 16px;
     // border: 1px solid green;
     cursor: pointer;
     &:hover {

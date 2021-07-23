@@ -6,12 +6,26 @@
     justify-content: space-between;
     padding-bottom: 50px;
 }
+.market__title {
+    padding-right: 15px;
+}
 .market__buttons {
     display: flex;
 }
 .market__cards {
     display: flex;
     padding: 0 40px;
+    @media screen and (max-width: 1330px) {
+        padding: 0;
+    }
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+        // padding: 0 10%;
+    }
+    @media screen and (max-width: 480px) {
+        padding: 0;
+    }
 }
 
 .market__cards-item {
@@ -20,6 +34,17 @@
     flex-direction: column;
     &:not(:last-child) {
         margin-right: 30px;
+        @media screen and (max-width: 1230px) {
+            margin-right: 15px;
+        }
+        @media screen and (max-width: 768px) {
+            margin-bottom: 30px;
+            margin-right: 0;
+            width: 330px;
+        }
+        @media screen and (max-width: 410px) {
+            width: 100%;
+        }
     }
 }
 
@@ -35,6 +60,11 @@
     border-radius: 0px 40px;
     transition: transform .4s ease, background .4s ease;
     position: relative;
+
+    @media screen and (min-width: 769px) and (max-width: 810px) {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
 
     &--active {
         background: $button-primary-color;
@@ -77,8 +107,11 @@
     color: $text-primary-color;
     padding-bottom: 16px;
 }
+.card__dropdown {
+    height: 54px;
+}
 .card__list {
-    padding-top: 32px;
+    padding-top: 14px;
 }
 .card__list-item {
     padding-bottom: 8px;
@@ -108,6 +141,18 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
+    @media screen and (max-width: 1080px) {
+        font-size: 14px;
+    }
+    @media screen and (min-width: 769px) and (max-width: 992px) {
+        letter-spacing: -0.04em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    @media screen and (max-width: 768px) {
+
+    }
 }
 .list-item__name {
     color: $text-secondary-color;
