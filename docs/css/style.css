@@ -117,6 +117,9 @@ body {
     .propgramm-text {
       font-size: 14px; } }
 
+.noBreakLine {
+  white-space: nowrap; }
+
 .button {
   display: inline-flex;
   align-items: center;
