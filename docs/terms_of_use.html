@@ -239,23 +239,43 @@
     </div>
 
     <div class="popup hide" id="contacts-popup">
-        <div class="popup__container">
+        <div class="popup__container" data-popup-container>
             <div class="popup__contacts">
-                Контакты<br>
-                телефон<br>
-                адрес<br>
-                примечания
+                <h2>Контакты</h2>
+                <ul class="popup-contacts">
+                    <li class="popup-contacts__item">
+                        <span class="popup-contacts__item-name">Владелец:</span>
+                        <span class="popup-contacts__item-value">ИП Рубцова Е. В.</span>
+                    </li>
+                    <li class="popup-contacts__item">
+                        <span class="popup-contacts__item-name">Телефон:</span>
+                        <span class="popup-contacts__item-value">+79045186127</span>
+                    </li>
+                    <li class="popup-contacts__item">
+                        <span class="popup-contacts__item-name">Email:</span>
+                        <span class="popup-contacts__item-value">ekaterina@uniboost.io</span>
+                    </li>
+                    <li class="popup-contacts__item">
+                        <span class="popup-contacts__item-name">ИНН:</span>
+                        <span class="popup-contacts__item-value">784802013139</span>
+                    </li>
+                    <li class="popup-contacts__item">
+                        <span class="popup-contacts__item-name">ОГРН:</span>
+                        <span class="popup-contacts__item-value">321784700191079</span>
+                    </li>
+                    <li class="popup-contacts__item">
+                        <span class="popup-contacts__item-name">Адрес:</span>
+                        <span class="popup-contacts__item-value">196211, г. Санкт-Петербург,<br>пр. Космонавтов 21, к. 2, кв. 52</span>
+                    </li>
+                </ul>
             </div>
-            <button class="popup__close close-button" id="contacts-popup-close" aria-label="Dismiss alert" type="button" data-close>
+            <button class="popup__close popup__close--contacts close-button" id="contacts-popup-close" aria-label="Dismiss alert" type="button" data-close>
                 <span aria-hidden="true">&times;</span>
             </button>
         </div>
-
     </div>
     
-    
-    
-    
     <script src='js/script.js' ></script>
+    <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>
