@@ -153,12 +153,13 @@ body {
     display: inline-flex; }
   @media screen and (max-width: 992px) {
     .button {
-      padding: 5px 12px;
+      padding: 5px 18px;
       font-size: 14px; } }
   @media screen and (max-width: 380px) {
     .button {
       font-size: 12px;
-      margin-left: 6px; } }
+      margin-left: 6px;
+      padding: 5px 12px; } }
 
 .button--primary {
   background-color: #4579F5;
@@ -584,29 +585,65 @@ body {
   .functional__title {
     text-align: center; }
 
+.functional__list-button-item {
+  display: inline-block; }
+  @media screen and (max-width: 768px) {
+    .functional__list-button-item:nth-child(1) {
+      flex: 1 0 50%;
+      display: flex;
+      justify-content: flex-end; } }
+  @media screen and (max-width: 768px) {
+    .functional__list-button-item:nth-child(2) {
+      flex: 1 0 50%;
+      display: flex;
+      justify-content: flex-start; } }
+  @media screen and (max-width: 768px) {
+    .functional__list-button-item:nth-child(3) {
+      flex: 1 0 33%;
+      display: flex;
+      justify-content: flex-end; } }
+  @media screen and (max-width: 768px) {
+    .functional__list-button-item:nth-child(4) {
+      flex: 0 1; } }
+  @media screen and (max-width: 768px) {
+    .functional__list-button-item:nth-child(5) {
+      flex: 1 0 33%;
+      display: flex;
+      justify-content: flex-start; } }
+
 .functional__list-buttons {
   padding-top: 40px;
   padding-bottom: 25px; }
   @media screen and (max-width: 768px) {
     .functional__list-buttons {
-      display: flex; } }
-  @media screen and (max-width: 430px) {
+      display: flex;
+      flex-wrap: wrap; } }
+  @media screen and (max-width: 330px) {
     .functional__list-buttons {
-      flex-direction: column; } }
+      margin: 0 -10px; } }
   .functional__list-buttons button {
     margin-left: 8px;
     margin-right: 8px; }
+    @media screen and (max-width: 840px) {
+      .functional__list-buttons button {
+        margin-top: 8px;
+        margin-bottom: 8px;
+        margin-left: 5px;
+        margin-right: 5px; } }
     @media screen and (max-width: 768px) {
       .functional__list-buttons button {
-        margin-top: 2px;
-        margin-bottom: 2px;
-        font-size: 12px;
-        margin-left: 2px;
-        margin-right: 2px;
-        padding: 6px; } }
+        margin-left: 8px;
+        margin-right: 8px; } }
+    @media screen and (max-width: 480px) {
+      .functional__list-buttons button {
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 5px 12px; } }
     @media screen and (max-width: 430px) {
       .functional__list-buttons button {
-        padding: 2px 24px; } }
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding: 5px 8px; } }
 
 .functional__content {
   display: flex;

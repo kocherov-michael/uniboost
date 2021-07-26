@@ -23,12 +23,13 @@
         display: inline-flex;
     }
     @media screen and (max-width: 992px) {
-        padding: 5px 12px;
+        padding: 5px 18px;
         font-size: 14px;
     }
     @media screen and (max-width: 380px) {
         font-size: 12px;
         margin-left: 6px;
+        padding: 5px 12px;
     }
 }
 

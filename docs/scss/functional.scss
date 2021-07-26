@@ -2,38 +2,82 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    // position: relative;
+    
     &__title {
         text-align: center;
+    }
+}
+.functional__list-button-item {
+    display: inline-block;
+    &:nth-child(1) {
+        @media screen and (max-width: 768px) {
+            flex: 1 0 50%;
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+    &:nth-child(2) {
+        @media screen and (max-width: 768px) {
+            flex: 1 0 50%;
+            display: flex;
+            justify-content: flex-start;
+        }
+    }
+    &:nth-child(3) {
+        @media screen and (max-width: 768px) {
+            flex: 1 0 33%;
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+    &:nth-child(4) {
+        @media screen and (max-width: 768px) {
+            flex: 0 1;
+        }
+    }
+    &:nth-child(5) {
+        @media screen and (max-width: 768px) {
+            flex: 1 0 33%;
+            display: flex;
+            justify-content: flex-start;
+        }
     }
 }
 
 .functional__list-buttons {
     padding-top: 40px;
     padding-bottom: 25px;
+
     @media screen and (max-width: 768px) {
-        // display: none;
         display: flex;
-        // flex-direction: column;
-        // position: absolute;
-        // left: 0;
+        flex-wrap: wrap;
     }
-    @media screen and (max-width: 430px) {
-        flex-direction: column;
+    @media screen and (max-width: 330px) {
+        margin: 0 -10px;
     }
     button {
         margin-left: 8px;
         margin-right: 8px;
+
+        @media screen and (max-width: 840px) {
+            margin-top: 8px;
+            margin-bottom: 8px;
+            margin-left: 5px;
+            margin-right: 5px
+        }
         @media screen and (max-width: 768px) {
-            margin-top: 2px;
-            margin-bottom: 2px;
-            font-size: 12px;
-            margin-left: 2px;
-            margin-right: 2px;
-            padding: 6px;
+            margin-left: 8px;
+            margin-right: 8px;
+        }
+        @media screen and (max-width: 480px) {
+            margin-left: 5px;
+            margin-right: 5px;
+            padding: 5px 12px;
         }
         @media screen and (max-width: 430px) {
-            padding: 2px 24px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            padding: 5px 8px;
         }
     }
 }
