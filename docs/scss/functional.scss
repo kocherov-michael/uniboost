@@ -1,0 +1,112 @@
+.functional {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // position: relative;
+    &__title {
+        text-align: center;
+    }
+}
+
+.functional__list-buttons {
+    padding-top: 40px;
+    padding-bottom: 25px;
+    @media screen and (max-width: 768px) {
+        // display: none;
+        display: flex;
+        // flex-direction: column;
+        // position: absolute;
+        // left: 0;
+    }
+    @media screen and (max-width: 430px) {
+        flex-direction: column;
+    }
+    button {
+        margin-left: 8px;
+        margin-right: 8px;
+        @media screen and (max-width: 768px) {
+            margin-top: 2px;
+            margin-bottom: 2px;
+            font-size: 12px;
+            margin-left: 2px;
+            margin-right: 2px;
+            padding: 6px;
+        }
+        @media screen and (max-width: 430px) {
+            padding: 2px 24px;
+        }
+    }
+}
+.functional__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    @media screen and (max-width: 768px) {
+        flex-direction: column-reverse;
+    }
+}
+.functional-text {
+    max-width: 530px;
+    @media screen and (max-width: 768px) {
+        text-align: center;
+    }
+}
+.functional-text__title {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 1;
+    letter-spacing: -1px;
+    color: $text-primary-color;
+    @media screen and (max-width: 1200px) {
+        font-size: 24px;
+    }
+    @media screen and (max-width: 768px) {
+        font-size: 20px;
+    }
+}
+
+.functional-text__desc {
+    padding-top: 16px;
+}
+
+.functional-text__container {
+    display: flex;
+}
+
+.functional-text__item {
+    flex: 1 0 100%;
+    opacity: 0;
+    transition: opacity .4s ease;
+    width: 0;
+    &--active {
+        opacity: 1;
+        width: 100%;
+    }
+}
+
+.functional-text__buttons {
+    padding-top: 32px;
+}
+
+.functional__img-container {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+}
+.functional__img {
+    width: 100%;
+    img {
+        width: 100%;
+
+    }
+}
+
+.link {
+    color: $button-primary-color;
+    text-decoration: none;
+    &:hover, &:active, &:visited {
+        color: $button-primary-color;
+        text-decoration: none;
+    }
+}

@@ -9,22 +9,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <title>UniBoost</title>
-    <link rel="stylesheet" href="css/style.css?9">
+    <link rel="stylesheet" href="css/style.css?10">
 </head>
 <body>
 
     <header class="header">
         <div class="container header__container" >
-            <div class="header__list">
-                <div class="header__list-item header__list-item--main">UniBoost</div>
-                <!-- <div class="header__list-item" data-button-to-functional>Главная</div> -->
-                <div class="header__list-item header__list-item--secondary" data-button-to-market>Тарифы</div>
-                <div class="header__list-item header__list-item--secondary" data-video-open-button>Видео обзор</div>
+            <div class="header__logo">
+                <div class="header-logo">UniBoost</div>
             </div>
-            <div class="header__buttons">
-                <a href="http://google.com" class="button button--secondary">Войти</a>
-                <a href="http://google.com" class="button button--primary">Регистрация</a>
+            
+            <div class="header__menu" data-menu>
+                <div class="header-menu">
+                    <div class="header__list">
+                        <div class="header__list-item header__list-item--secondary" data-button-to-market data-menu-item>Тарифы</div>
+                        <div class="header__list-item header__list-item--secondary" data-video-open-button data-menu-item>Видео обзор</div>
+                    </div>
+                    <div class="header__buttons">
+                        <a href="http://google.com" class="button button--secondary" data-menu-item>Войти</a>
+                        <a href="http://google.com" class="button button--primary" data-menu-item>Регистрация</a>
+                    </div>
+                </div>
             </div>
+            <div class="header__menu-icon" data-menu-icon></div>
         </div>
     </header>
 

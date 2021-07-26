@@ -1,0 +1,115 @@
+@import "vars.scss";
+
+.footer {
+    background-color: $secondary-base-color;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    &--primary-color {
+        background-color: $primary-base-color;
+    }
+    @media screen and (max-width: 768px) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+.footer__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+    }
+}
+.footer__logo {
+    font-family: 'Exo 2', sans-serif;
+    color: $text-primary-color;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+.social {
+    display: flex;
+}
+.social__item {
+    margin-left: 24px;
+    background: rgba(224, 224, 255, 0.02);
+    border-radius: 4px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color .1s ease;
+    color: $text-secondary-color;
+    &-icon {
+        &--vk {
+            font-size: 12px;
+            padding: 4px;
+            border-radius: 4px;
+            background-color: $text-secondary-color;
+            width: 20px;
+            height: 20px;
+            color: #24272D;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background-color .1s ease;
+        }
+    }
+    &:hover {
+        transition: color .4s ease;
+        color: $button-primary-color;
+        .social__item-icon--vk {
+            transition: background-color .4s ease;
+            background-color: $button-primary-color;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        margin: 12px 12px 0;
+    }
+}
+.footer__bottom {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.71;
+    @media screen and (max-width: 1370px) {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    @media screen and (max-width: 992px) {
+        padding-top: 10px;
+    }
+}
+.footer__logo {
+    cursor: pointer;
+}
+.footer__company {
+    color: $text-secondary-color;
+    @media screen and (max-width: 768px) {
+        text-align: center;
+    }
+}
+    
+.footer__list {
+    display: flex;
+    justify-content: space-between;
+    a {
+        color: $text-secondary-color;
+        text-decoration: none;
+        margin-left: 20px;
+        @media screen and (max-width: 992px) {
+            margin-left: 0;
+            margin-bottom: 10px;
+        }
+    }
+    @media screen and (max-width: 992px) {
+        flex-direction: column;
+        text-align: center;
+    }
+}

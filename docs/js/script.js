@@ -1,5 +1,6 @@
 initScrolls()
 marketplaceInit()
+initMenu()
 
 initPopup({
     container: '#video-popup',
@@ -250,4 +251,28 @@ function marketplaceInit () {
         card.addEventListener('mouseover', cardHandler)
     
     })
+}
+
+function initMenu() {
+    const menuElem = document.querySelector('[data-menu]')
+    const menuItemsList = menuElem.querySelectorAll('[data-menu-item]')
+    const menuIconElem = document.querySelector('[data-menu-icon]')
+    const bodyElem = document.body
+    
+    menuIconElem.addEventListener('click', () => {
+        if (bodyElem.classList.contains('show-menu')) {
+            bodyElem.classList.remove('show-menu') 
+        } else {
+            bodyElem.classList.add('show-menu')
+
+        }
+    })
+    menuItemsList.forEach(listElem => {
+        listElem.addEventListener('click', e => {
+            bodyElem.classList.remove('show-menu') 
+        })
+    })
+    window.onresize = () => {
+        bodyElem.classList.remove('show-menu')
+    }
 }
