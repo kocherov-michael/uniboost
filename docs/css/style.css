@@ -1120,10 +1120,8 @@ body {
 .payments {
   display: flex;
   align-items: center; }
-  .payments img {
-    transition: filter .4s ease; }
-    .payments img:not(:last-child) {
-      margin-right: 5px; }
+  .payments img:not(:last-child) {
+    margin-right: 5px; }
   .payments .payments__visa {
     margin-top: -2px; }
   .payments.grey .payments__tinkoff {
