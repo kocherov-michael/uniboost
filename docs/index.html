@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <title>UniBoost</title>
-    <link rel="stylesheet" href="css/style.css?11">
+    <link rel="stylesheet" href="css/style.css?12">
 </head>
 <body>
 
@@ -20,7 +20,7 @@
             </div>
             
             <div class="header__menu" data-menu>
-                <div class="header-menu">
+                <nav class="header-menu">
                     <div class="header__list">
                         <div class="header__list-item header__list-item--secondary" data-button-to-market data-menu-item>Тарифы</div>
                         <div class="header__list-item header__list-item--secondary" data-video-open-button data-menu-item>Видео обзор</div>
@@ -29,7 +29,7 @@
                         <a href="http://google.com" class="button button--secondary" data-menu-item>Войти</a>
                         <a href="http://google.com" class="button button--primary" data-menu-item>Регистрация</a>
                     </div>
-                </div>
+                </nav>
             </div>
             <div class="header__menu-icon" data-menu-icon></div>
         </div>
@@ -64,7 +64,7 @@
                         <div class="video-image">
                             <div class="video-image__img">
 
-                                <img src="image/illustration-video.png"/>
+                                <img src="image/illustration-video.png" alt="video" />
                                 <div class="video-image__arrow" data-video-open-button>
                                 </div>
                             </div>
@@ -84,7 +84,7 @@
                             <div class="about-images" data-about-images>
 
                                 <div class="about-images__item" data-about-img-item>
-                                    <img src="image/rocket.png"/>
+                                    <img src="image/rocket.png" alt="rocket" />
                                     <div class="about-images__pagination">
                                         <div class="about-images__pagination-item about-images__pagination-item--active"></div>
                                         <div class="about-images__pagination-item"></div>
@@ -92,7 +92,7 @@
                                     </div>
                                 </div>
                                 <div class="about-images__item hidden" data-about-img-item>
-                                    <img src="image/calc.png"/>
+                                    <img src="image/calc.png" alt="calculator" />
                                     <div class="about-images__pagination">
                                         <div class="about-images__pagination-item"></div>
                                         <div class="about-images__pagination-item about-images__pagination-item--active"></div>
@@ -100,7 +100,7 @@
                                     </div>
                                 </div>
                                 <div class="about-images__item hidden" data-about-img-item>
-                                    <img src="image/planet.png"/>
+                                    <img src="image/planet.png" alt="planet" />
                                     <div class="about-images__pagination">
                                         <div class="about-images__pagination-item"></div>
                                         <div class="about-images__pagination-item"></div>
@@ -239,7 +239,7 @@
                         </div>
                         <div class="functional__img-container">
                             <div class="functional__img">
-                                <img src="image/notebook.png"/>
+                                <img src="image/notebook.png" alt="notebook" />
                             </div>
                         </div>
                     </div>
@@ -252,7 +252,7 @@
             <div class="container">
                 <div class="offer">
                     <div class="offer__img">
-                        <img src="image/happy-man.png"/>
+                        <img src="image/happy-man.png" alt="man" />
                     </div>
                     <div class="offer__text">
                         <div class="offer-text">
@@ -572,15 +572,26 @@
                     </a>
                 </div>
             </div>
-            <div class="footer__bottom">
+            <div class="footer__links">
                 <div class="footer__company">
                     © UniBoost, 2021. Все права защищены
                 </div>
-                <div class="footer__list">
+                <nav class="footer__list">
                     <a href="index.html" data-contacts-open-button>Контакты</a>
                     <a href="affiliate_program.html">Партнерская программа</a>
                     <a href="terms_of_use.html">Пользовательское соглашение</a>
                     <a href="policy.html">Политика конфиденциальности</a>
+                </nav>
+            </div>
+            <div class="footer__integration">
+                <div class="footer__integration-payment payments grey">
+                    <img src="image/tinkoff.png" class="payments__tinkoff" alt="tinkoff" />
+                    <img src="image/visa.png" class="payments__visa " alt="visa" />
+                    <img src="image/mastercard.png" class="payments__mastercard" alt="mastercard" />
+                    <img src="image/mir.png" class="payments__mir" alt="mir" />
+                </div>
+                <div class="footer__integration-owner ">
+                    ИП Рубцова Е.В.
                 </div>
             </div>
 
@@ -592,9 +603,9 @@
         <div class="popup__container" >
             <div 
                 id="player" 
-                data-video-url="https://www.youtube.com/embed/uHKfrz65KSU"
-                data-width="960"
-                data-height="540"
+                data-video-url="https://www.youtube.com/embed/pSDmmU6atGs"
+                data-width="2368"
+                data-height="1064"
             ></div>
             <button class="popup__close popup__close--video close-button" id="video-popup-close" aria-label="Dismiss alert" type="button" data-close>
                 <span aria-hidden="true">&times;</span>

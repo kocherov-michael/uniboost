@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <title>Партнёрская программа</title>
-    <link rel="stylesheet" href="css/style.css?11">
+    <link rel="stylesheet" href="css/style.css?12">
 </head>
 <body>
 
@@ -20,7 +20,7 @@
             </div>
             
             <div class="header__menu" data-menu>
-                <div class="header-menu">
+                <nav class="header-menu">
                     <div class="header__list">
                         <div class="header__list-item header__list-item--secondary" data-button-to-market data-menu-item>Тарифы</div>
                         <div class="header__list-item header__list-item--secondary" data-video-open-button data-menu-item>Видео обзор</div>
@@ -29,7 +29,7 @@
                         <a href="http://google.com" class="button button--secondary" data-menu-item>Войти</a>
                         <a href="http://google.com" class="button button--primary" data-menu-item>Регистрация</a>
                     </div>
-                </div>
+                </nav>
             </div>
             <div class="header__menu-icon" data-menu-icon></div>
         </div>
@@ -58,6 +58,23 @@
                     почту <a href="mailto:info@uniboost.io" class="link" target="_blank">support@uniboost.io</a><br>
                     телеграм <a href="tg://resolve?domain=UniBoost_support" class="link" target="_blank">https://t.me/UniBoost_support</a>
                 </p>
+
+                <style>.tinkoffPayRow{display:block;margin:1%;width:160px;}</style>
+                <script src="https://securepay.tinkoff.ru/html/payForm/js/tinkoff_v2.js"></script>
+                <form name="TinkoffPayForm" onsubmit="pay(this); return false;">
+                <input class="tinkoffPayRow" type="hidden" name="terminalkey" value="TinkoffBankTest">
+                <input class="tinkoffPayRow" type="hidden" name="frame" value="true">
+                <input class="tinkoffPayRow" type="hidden" name="language" value="ru">
+                    <input class="tinkoffPayRow" type="hidden" name="reccurentPayment" value="false">
+                    <input class="tinkoffPayRow" type="hidden" name="customerKey" value="">
+                    <input class="tinkoffPayRow" type="text" placeholder="Сумма заказа" name="amount" required>
+                    <input class="tinkoffPayRow" type="text" placeholder="Номер заказа" name="order">
+                    <input class="tinkoffPayRow" type="text" placeholder="Описание заказа" name="description">
+                    <input class="tinkoffPayRow" type="text" placeholder="ФИО плательщика" name="name">
+                    <input class="tinkoffPayRow" type="text" placeholder="E-mail" name="email">
+                    <input class="tinkoffPayRow" type="text" placeholder="Контактный телефон" name="phone">
+                    <input class="tinkoffPayRow" type="submit" value="Оплатить">
+                </form>
                 
             </div>
 
@@ -92,15 +109,26 @@
                     </a>
                 </div>
             </div>
-            <div class="footer__bottom">
+            <div class="footer__links">
                 <div class="footer__company">
                     © UniBoost, 2021. Все права защищены
                 </div>
-                <div class="footer__list">
+                <nav class="footer__list">
                     <a href="index.html" data-contacts-open-button>Контакты</a>
                     <a href="affiliate_program.html">Партнерская программа</a>
                     <a href="terms_of_use.html">Пользовательское соглашение</a>
                     <a href="policy.html">Политика конфиденциальности</a>
+                </nav>
+            </div>
+            <div class="footer__integration">
+                <div class="footer__integration-payment payments grey">
+                    <img src="image/tinkoff.png" class="payments__tinkoff" alt="tinkoff" />
+                    <img src="image/visa.png" class="payments__visa " alt="visa" />
+                    <img src="image/mastercard.png" class="payments__mastercard" alt="mastercard" />
+                    <img src="image/mir.png" class="payments__mir" alt="mir" />
+                </div>
+                <div class="footer__integration-owner ">
+                    ИП Рубцова Е.В.
                 </div>
             </div>
 

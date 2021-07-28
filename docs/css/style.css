@@ -1059,7 +1059,7 @@ body {
     .social__item {
       margin: 12px 12px 0; } }
 
-.footer__bottom {
+.footer__links {
   padding-top: 50px;
   display: flex;
   justify-content: space-between;
@@ -1067,11 +1067,11 @@ body {
   font-size: 14px;
   line-height: 1.71; }
   @media screen and (max-width: 1370px) {
-    .footer__bottom {
+    .footer__links {
       flex-direction: column-reverse;
       align-items: center; } }
   @media screen and (max-width: 992px) {
-    .footer__bottom {
+    .footer__links {
       padding-top: 10px; } }
 
 .footer__logo {
@@ -1098,6 +1098,44 @@ body {
     .footer__list {
       flex-direction: column;
       text-align: center; } }
+
+.footer__integration {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px; }
+  .footer__integration-owner {
+    color: rgba(224, 224, 255, 0.6);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.7; }
+  @media screen and (max-width: 500px) {
+    .footer__integration-payment {
+      padding-bottom: 12px; } }
+  @media screen and (max-width: 500px) {
+    .footer__integration {
+      flex-direction: column;
+      align-items: center;
+      padding-top: 14px; } }
+
+.payments {
+  display: flex;
+  align-items: center; }
+  .payments img {
+    transition: filter .4s ease; }
+    .payments img:not(:last-child) {
+      margin-right: 5px; }
+  .payments .payments__visa {
+    margin-top: -2px; }
+  .payments.grey .payments__tinkoff {
+    filter: grayscale(1) opacity(0.4); }
+  .payments.grey .payments__visa {
+    filter: grayscale(1) brightness(3) opacity(0.5); }
+  .payments.grey .payments__mastercard {
+    filter: grayscale(1) brightness(4) opacity(0.35); }
+  .payments.grey .payments__mir {
+    filter: grayscale(1) brightness(3) opacity(0.4); }
+  .payments.grey > img:hover {
+    filter: none; }
 
 .popup {
   position: fixed;

@@ -38,6 +38,9 @@ function initPopup({container, initButtons, closeButton}){
                 if (width > window.innerWidth - 80) {
                     const ratio = width / height
                     width = window.innerWidth - 80
+                    if (window.innerWidth > 1000) {
+                        width = 900
+                    }
                     height = width / ratio
                 }
                 

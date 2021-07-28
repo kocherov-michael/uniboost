@@ -71,7 +71,7 @@
         margin: 12px 12px 0;
     }
 }
-.footer__bottom {
+.footer__links {
     padding-top: 50px;
     display: flex;
     justify-content: space-between;
@@ -111,5 +111,61 @@
     @media screen and (max-width: 992px) {
         flex-direction: column;
         text-align: center;
+    }
+}
+
+.footer__integration {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    
+    &-owner {
+        color: $text-secondary-color;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    &-payment {
+        @media screen and (max-width: 500px) {
+            padding-bottom: 12px;
+        }
+    }
+    
+    @media screen and (max-width: 500px) {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 14px;
+    }
+}
+
+.payments {
+    display: flex;
+    align-items: center;
+    img {
+        &:not(:last-child) {
+            margin-right: 5px;
+        }
+        transition: filter .4s ease;
+    }
+    .payments__visa {
+        margin-top: -2px;
+    }
+    &.grey {
+        .payments__tinkoff {
+            filter: grayscale(1) opacity(.4);
+        }
+        .payments__visa {
+            filter: grayscale(1) brightness(3) opacity(.5);
+        }
+        .payments__mastercard {
+            filter: grayscale(1) brightness(4) opacity(.35);
+        }
+        .payments__mir {
+            filter: grayscale(1) brightness(3) opacity(.4);
+        }
+        &>img:hover {
+            filter: none;
+        }
     }
 }
